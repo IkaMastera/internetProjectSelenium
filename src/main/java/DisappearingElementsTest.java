@@ -14,5 +14,9 @@ public class DisappearingElementsTest {
         WebDriver driver = new ChromeDriver();
 
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+
+        try{
+            
+        }
     }
 }
