@@ -16,7 +16,7 @@ public class DisappearingElementsTest {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
         try{
-            
+            driver.get("https://the-internet.herokuapp.com/disappearing_elements");
         }
     }
 }
