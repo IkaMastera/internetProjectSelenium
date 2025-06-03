@@ -17,6 +17,10 @@ public class DisappearingElementsTest {
 
         try{
             driver.get("https://the-internet.herokuapp.com/disappearing_elements");
+
+            // Defined menu items
+            List<String> expectedItems = Arrays.asList("Home", "About", "Contact Us", "Portfolio", "Gallery");
+            List<String> actualItems = new ArrayList<>();
         }
     }
 }
