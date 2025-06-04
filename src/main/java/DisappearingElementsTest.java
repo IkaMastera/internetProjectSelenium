@@ -21,6 +21,9 @@ public class DisappearingElementsTest {
             // Defined menu items
             List<String> expectedItems = Arrays.asList("Home", "About", "Contact Us", "Portfolio", "Gallery");
             List<String> actualItems = new ArrayList<>();
+
+             // Find all menu elements
+            List<WebElement> menuElements = driver.findElements(By.cssSelector("ul li a"));
         }
     }
 }
