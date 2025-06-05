@@ -24,6 +24,12 @@ public class DisappearingElementsTest {
 
              // Find all menu elements
             List<WebElement> menuElements = driver.findElements(By.cssSelector("ul li a"));
+
+            for (WebElement item : menuElements) {
+                actualItems.add(item.getText().trim());
+            }
+
+            System.out.println("Actual Items: " + actualItems);
         }
     }
 }
