@@ -30,6 +30,21 @@ public class DisappearingElementsTest {
             }
 
             System.out.println("Actual Items: " + actualItems);
+
+            // Check for missing items
+            for (String expected : expectedItems) {
+                if (!actualItems.contains(expected)) {
+                    System.out.println("❌ Missing: " + expected);
+                } else {
+                    System.out.println("✅ Found: " + expected);
+                }
+            }
+
+                } catch (Exception e) {
+                    e.printStackTrace();
+                } finally {
+                    driver.quit();
+                
         }
     }
 }
