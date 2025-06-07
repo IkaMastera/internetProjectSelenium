@@ -10,6 +10,7 @@ import java.util.List;
 
 public class DisappearingElementsTest {
     public static void main(String[] args) {
+          // Set up WebDriver (Make sure chromedriver is in PATH or project folder)
         System.setProperty("webdriver.chrome.driver", "chromedriver.exe")
         WebDriver driver = new ChromeDriver();
 
